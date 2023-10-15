@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        background-color: antiquewhite;
+      }
+      table {
+        border: 1px solid #000;
+        width: 100%;
+      }
+      tr {
+        border: 1px solid #000;
+      }
+      td {
+        border: 1px solid #000;
+        text-align: left;
+        height: 50px;
+      }
+      .girdi {
+        width: 90%;
+        text-align: center;
+        height: 20px;
+        margin-left: 8px;
+      }
+      .btn {
+        width: 150px;
+        height: 50px;
+        border: none;
+        background-color: blanchedalmond;
+        border: 1px solid black;
+        margin: 15px;
+      }
+      .btn:hover {
+        background-color: #000;
+        color: blanchedalmond;
+        transition-duration: 0.3s;
+      }
+      .secenekler {
+        margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="dgs-puanmatik.php" method="post">
+      <table>
+        <tr>
+          <td colspan="3" style="font-weight: bold; text-align: center">
+            DGS PUANMATİK
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>DOĞRU</td>
+          <td>YANLIŞ</td>
+        </tr>
+
+        <tr>
+          <td>SAYISAL TESTİ</td>
+          <td><input type="text" name="say-dogru" class="girdi" /></td>
+          <td><input type="text" name="say-yanlis" class="girdi" /></td>
+        </tr>
+        <tr>
+          <td>SÖZEL TESTİ</td>
+          <td><input type="text" name="soz-dogru" class="girdi" /></td>
+          <td><input type="text" name="soz-yanlis" class="girdi" /></td>
+        </tr>
+        <tr>
+          <td>ÖNLİSANS BAŞARI PUANI (ZORUNLU ALAN)</td>
+          <td><input type="text" name="obs-puan" class="girdi" required /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ALANINIZ</td>
+          <td colspan="2" style="text-align: center">
+            <input type="radio" name="alan" value="1" class="secenekler" />
+            Sayısal
+            <input
+              type="radio"
+              name="alan"
+              value="2"
+              class="secenekler"
+            />Sözel
+            <input type="radio" name="alan" value="3" class="secenekler" />
+            Sayısal
+          </td>
+        </tr>
+        <tr>
+          <td>GEÇEN SENELERDE DGS İLE BİR YERE YERLEŞTİRİLDİNİZ Mİ?</td>
+          <td style="text-align: center">
+            Evet<input type="radio" name="gecmis" value="1" />
+          </td>
+          <td style="text-align: center">
+            Hayır<input type="radio" name="gecmis" value="2" />
+          </td>
+        </tr> 
+        <tr>
+          <td colspan="3" style="text-align: center">
+            <input type="submit" name="hesapla" value="HESAPLA" class="btn" />
+            <input type="reset" name="temizle" value="TEMİZLE" class="btn" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
