@@ -1,5 +1,8 @@
 # Dgs-Score-Calculator
 
+# Tools and Languages
+![Langs](https://skillicons.dev/icons?i=vscode,php,html,css,")
+
 [EN] 
 The purpose of this site is to calculate the DGS (Vertical Transfer Exam) score in the Turkish education system. This is a simple PHP example I made as homework at school.
 I'm new to learning PHP and I'm continuing to improve myself.
